@@ -1,0 +1,25 @@
+.button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #267E4A;
+    color: white;
+    text-decoration: none;
+    border-radius:7px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    display:inline-block;
+  }
+
+.button:hover{
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #DF2041;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;  
+  }

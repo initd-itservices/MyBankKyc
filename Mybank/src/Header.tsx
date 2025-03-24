@@ -1,11 +1,25 @@
 import React from "react";
-import "./Header.css";
-
+import "./Style/Header.css"
+// import Image from "next/image";
+// import postbank from "./assets/postbank.png";
 const Header: React.FC = () => {
   return (
+    
+    
     <header className="header">
-      <h1>MyBank</h1>
+      <div>
+        {/* <Image
+      src={postbank}
+      alt='postbank_logo'
+      width="10"
+      height="10"
+      /> */}
+      </div>
+      
+      {/* <h1>MyBank</h1> */}
+      
     </header>
+    
   );
 };
 

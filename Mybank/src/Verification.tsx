@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Style/UserVerification.css"; 
+import Button from "./Components/Button";
+
 
 const MOBILE_VALIDATION_API = "https://your-api-endpoint.com/validate-mobile";
 const ID_VALIDATION_API = "https://testapi.smileidentity.com/v2/verify";
@@ -62,14 +65,22 @@ const Verification: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <header className="w-full bg-red-600 text-white text-center py-4 text-2xl font-bold">
-        User Verification
+      
+      <header 
+        // className="w-full bg-red-600 text-white text-center py-4 text-2xl font-bold"
+      >
+        <h1 className="heading">User <font color="#DF2041">Verification</font></h1>
       </header>
-      <form className="bg-white p-6 rounded-lg shadow-md w-96 mt-6" onSubmit={handleVerify}>
+      <form 
+        className="container"
+        // className="bg-white p-6 rounded-lg shadow-md w-96 mt-6"
+        onSubmit={handleVerify}>
         <input
+
           type="text"
           placeholder="First Name"
-          className="border p-2 mb-2 w-full rounded"
+          className="input"
+          // className="border p-2 mb-2 w-full rounded"
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
           required
@@ -77,7 +88,8 @@ const Verification: React.FC = () => {
         <input
           type="text"
           placeholder="Last Name"
-          className="border p-2 mb-2 w-full rounded"
+          className="input"
+          // className="border p-2 mb-2 w-full rounded"
           value={lastName}
           onChange={(e) => setLastName(e.target.value)}
           required
@@ -85,7 +97,8 @@ const Verification: React.FC = () => {
         <input
           type="text"
           placeholder="South African ID Number"
-          className="border p-2 mb-2 w-full rounded"
+          className="input"
+          // className="border p-2 mb-2 w-full rounded"
           value={idNumber}
           onChange={(e) => setIdNumber(e.target.value)}
           required
@@ -93,16 +106,24 @@ const Verification: React.FC = () => {
         <input
           type="text"
           placeholder="Mobile Number (e.g., 0821234567)"
-          className="border p-2 mb-2 w-full rounded"
+          className="input"
+          // className="border p-2 mb-2 w-full rounded"
           value={mobile}
           onChange={(e) => setMobile(e.target.value)}
           required
         />
         {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
         {success && <p className="text-green-500 text-sm mt-2">{success}</p>}
-        <button type="submit" className="bg-red-600 text-white px-4 py-2 rounded w-full mt-2 hover:bg-red-700">
+        {/* <button
+          className="button" 
+          type="submit" 
+          // className="bg-red-600 text-white px-4 py-2 rounded w-full mt-2 hover:bg-red-700"
+          >
           Verify
-        </button>
+        </button> */}
+        <Button text={'Verify'} onClick={function (): void {
+          throw new Error("Function not implemented.");
+        } }/>
       </form>
     </div>
   );
