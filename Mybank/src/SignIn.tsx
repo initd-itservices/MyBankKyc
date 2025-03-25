@@ -1,7 +1,8 @@
+//ROW CSS
+
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Style/SignIn.css";
-import Header from "./Header"
 import Button from "./Components/Button";
 
 const SignIn: React.FC = () => {
@@ -20,6 +21,19 @@ const SignIn: React.FC = () => {
             </form>
             </div>
             <Link to="/verify">Don't have an account? Sign Up</Link>
+            <div className="Oauth-container">
+              <div className="Oauth-row">  
+                <a href="#" className="google-btn">
+                  <i></i>Login with Google
+                </a>
+                <a href="#" className="fb-btn">
+                  <i></i>Login with Facebook
+                </a>
+                <a href="#" className="apple-btn">
+                  <i></i>Login with Apple
+                </a>
+              </div>
+            </div>
           </div>
         </div>
     </div>

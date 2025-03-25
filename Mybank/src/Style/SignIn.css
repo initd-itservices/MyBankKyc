@@ -31,9 +31,59 @@
     cursor: pointer;
   }
 
-  /* input{
-    background-color: white;
-  } */
+  .Oauth-container{
+    position:relative
+  }
+
+  .Oauth-row{
+    /* position: relative; */
+    content: "";
+    display:inline-block;
+    clear: both;
+    margin: 10px;
+
+  }
+
+  .apple-btn, .fb-btn, .google-btn{
+    color: #f2f2f2;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7px;
+    /* display: block; */
+  }
+
+  .apple-btn:hover, .fb-btn:hover, .google-btn:hover{
+    color: #f2f2f2;
+  }
+
+  .fb-btn{
+    background-color:#3B5998;
+  }
+
+  .fb-btn:hover{
+    background-color:#2f4679;
+  }
+
+  .google-btn{
+    background-color: #dd4b39; 
+  }
+
+  .google-btn:hover{
+    background-color: #be4332; 
+  }
+
+  .apple-btn{
+    background-color: black; 
+  }
+
+  .apple-btn:hover{
+    background-color: rgb(48, 43, 43); 
+  }
 
   .input{
     background-color: #FFFFFF;
