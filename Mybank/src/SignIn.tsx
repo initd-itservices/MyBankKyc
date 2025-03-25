@@ -24,13 +24,13 @@ const SignIn: React.FC = () => {
             <div className="Oauth-container">
               <div className="Oauth-row">  
                 <a href="#" className="google-btn">
-                  <i></i>Login with Google
+                  <i>Login with Google</i>
                 </a>
                 <a href="#" className="fb-btn">
-                  <i></i>Login with Facebook
+                  <i>Login with Facebook</i>
                 </a>
                 <a href="#" className="apple-btn">
-                  <i></i>Login with Apple
+                  <i>Login with Apple</i>
                 </a>
               </div>
             </div>
